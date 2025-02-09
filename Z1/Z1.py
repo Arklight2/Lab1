@@ -48,7 +48,7 @@ def gcd_of_max_odd_composite_divisor_and_digit_product(n):
     digit_product = product_of_digits_not_divisible_by_5(n)
     return math.gcd(max_odd_composite, digit_product)
 
-n = 150
+n = int(input("Введите число: "))
 print("Максимальный простой делитель:", max_prime_divisor(n))
 print("Произведение цифр, не делящихся на 5:", product_of_digits_not_divisible_by_5(n))
 print("НОД максимального нечетного непростого делителя и произведения цифр:",
