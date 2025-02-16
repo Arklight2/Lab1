@@ -16,7 +16,7 @@ def find_dates(text):
     valid_dates = [" ".join(match) for match in matches if is_valid_date(int(match[0]), match[1], int(match[2]))]
     return valid_dates
 
-# Ввод строки от пользователя
+
 text = input("Введите строку: ")
 dates = find_dates(text)
 print("Найденные корректные даты:", dates)
